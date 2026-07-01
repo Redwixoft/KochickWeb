@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochick — Objavuj svoje mesto pešo</title>
+  <meta name="description" data-i18n="meta.description"
+        content="Kochick je hravá appka pre rodičov s kočíkom. Prechádzaj sa, plň denné raidy, objavuj mesto a nájdi svoju kochick — parťáčku na prechádzky." />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo.png" alt="Kochick" class="brand__logo" />
+        <span class="brand__name">Kochick</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#features" data-i18n="nav.features">Funkcie</a>
+        <a href="#how" data-i18n="nav.how">Ako to funguje</a>
+        <a href="#who" data-i18n="nav.who">Pre koho</a>
+        <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn" data-lang="sk">SK</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="uk">UK</button>
+        </div>
+
+        <a href="#download" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.download">Stiahnuť</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="pill" data-i18n="hero.pill">🍼 Pre rodičov v Bratislave</span>
+          <h1 class="hero__title" data-i18n="hero.title">Objavuj svoje mesto pešo. Nájdi svoju <span class="accent">kochick</span>.</h1>
+          <p class="hero__sub" data-i18n="hero.sub">
+            Premeň každodennú prechádzku s kočíkom na dobrodružstvo. Plň denné raidy, zbieraj body,
+            objavuj ulice a spoznaj rodičov, ktorí sa prechádzajú tak ako ty.
+          </p>
+
+          <div class="store-row">
+            <!-- IOS button — comment out this whole block to hide when only Android is ready -->
+            <a class="store-btn" data-store="ios" href="#" aria-label="App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.26 3.05-.99 1-2.15 1.58-3.4 1.48-.15-1.12.4-2.28 1.2-3.06.87-.86 2.3-1.5 3.46-1.47zM20.5 17.02c-.6 1.38-.9 1.99-1.66 3.2-1.07 1.7-2.58 3.82-4.46 3.83-1.66.02-2.09-1.08-4.35-1.07-2.26.01-2.73 1.09-4.4 1.07-1.87-.02-3.3-1.93-4.37-3.63C-1.16 17.9-1.48 12.4.98 9.48c1.24-1.5 3.2-2.45 4.98-2.45 1.82 0 2.96 1.08 4.46 1.08 1.46 0 2.35-1.08 4.46-1.08 1.6 0 3.29.87 4.5 2.38-3.95 2.16-3.31 7.8.12 8.61z"/></svg>
+              <span><small data-i18n="store.iosSmall">Stiahni na</small><strong>App Store</strong></span>
+            </a>
+            <!-- /IOS -->
+
+            <!-- ANDROID button — comment out this whole block to hide when only iOS is ready -->
+            <a class="store-btn" data-store="android" href="#" aria-label="Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.3.2-.5.6-.5 1.1v18.2c0 .5.2.9.5 1.1l.1.1L14 12.1v-.2L3.7 1.7l-.1.1zm11.9 10.5l3.4 3.4-11 6.3c-.4.2-.8.1-1.1 0l8.7-9.7zm0-.6L6.8 2.4c.3-.2.7-.2 1.1 0l11 6.3-3.4 3zm.9.3l3.6-2c.7-.4.7-1.4 0-1.8l-3.5-2-3.7 3.4 3.6 2.4z"/></svg>
+              <span><small data-i18n="store.androidSmall">Získaj na</small><strong>Google Play</strong></span>
+            </a>
+            <!-- /ANDROID -->
+          </div>
+        </div>
+
+        <div class="hero__art reveal">
+          <div class="hero__phone">
+            <img src="assets/img/hero-woman.png" alt="" class="hero__scene hero__scene--front" />
+            <img src="assets/img/hero-man.png" alt="" class="hero__scene hero__scene--back" />
+          </div>
+          <div class="float-badge float-badge--1"><strong>+120</strong><span data-i18n="hero.badgePoints">bodov dnes</span></div>
+          <div class="float-badge float-badge--2">🗺️ <span data-i18n="hero.badgeStreets">18 navštívených ulíc</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section class="stats">
+      <div class="container stats__inner">
+        <div class="stat reveal"><strong>3</strong><span data-i18n="stats.raids">denné raidy</span></div>
+        <div class="stat reveal"><strong>100%</strong><span data-i18n="stats.map">mesta na objavenie</span></div>
+        <div class="stat reveal"><strong>∞</strong><span data-i18n="stats.friends">nových priateľstiev</span></div>
+        <div class="stat reveal"><strong>🏆</strong><span data-i18n="stats.rank">rebríček susedstva</span></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="features.eyebrow">Funkcie</span>
+          <h2 data-i18n="features.title">Prechádzka, ktorá sa oplatí</h2>
+          <p data-i18n="features.sub">Všetko, čo z bežnej prechádzky s kočíkom spraví hru — a zo susedstva komunitu.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card__icon card__icon--green">🚶</div>
+            <h3 data-i18n="feat.strolls.t">Sleduj svoje strolls</h3>
+            <p data-i18n="feat.strolls.d">Zapni sledovanie a appka zaznamená tvoju trasu, vzdialenosť aj ulice, ktorými si prešla.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon card__icon--orange">🎯</div>
+            <h3 data-i18n="feat.raids.t">Denné raidy</h3>
+            <p data-i18n="feat.raids.d">Každý deň dostaneš tri raidy — ulice alebo miesta v okolí. Splň ich, získaj body a objav viac zo štvrte.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon card__icon--green">🤝</div>
+            <h3 data-i18n="feat.meetups.t">Nájdi svoju kochick</h3>
+            <p data-i18n="feat.meetups.d">Nechceš sa prechádzať sama? Vytvor stretnutie alebo sa pridaj k inému rodičovi a spoznaj nových priateľov.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon card__icon--blue">🗺️</div>
+            <h3 data-i18n="feat.map.t">Objavuj mapu mesta</h3>
+            <p data-i18n="feat.map.d">Každá prejdená ulica sa vyfarbí. Sleduj, koľko percent svojho okolia už máš objavených.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon card__icon--orange">🚧</div>
+            <h3 data-i18n="feat.walk.t">Nahlás bariéry</h3>
+            <p data-i18n="feat.walk.d">Zlý priechod alebo nedostupný chodník? Nahlás walkability a pomôž ostatným rodičom s kočíkom.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon card__icon--green">🏆</div>
+            <h3 data-i18n="feat.rank.t">Rebríček</h3>
+            <p data-i18n="feat.rank.d">Zbieraj body, stúpaj v rebríčku svojho susedstva a súťaž o titul najaktívnejšieho rodiča.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section--tint" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="how.eyebrow">Ako to funguje</span>
+          <h2 data-i18n="how.title">Začni za tri kroky</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__num">1</div>
+            <h3 data-i18n="how.s1.t">Stiahni appku</h3>
+            <p data-i18n="how.s1.d">Zaregistruj sa a vyber si svoju domácu štvrť. Tam sa sústredia tvoje raidy a pokrok.</p>
+          </div>
+          <div class="step__line" aria-hidden="true"></div>
+          <div class="step reveal">
+            <div class="step__num">2</div>
+            <h3 data-i18n="how.s2.t">Prechádzaj sa a plň raidy</h3>
+            <p data-i18n="how.s2.d">Vyraz von s kočíkom, splň denné raidy, objavuj ulice a zbieraj body.</p>
+          </div>
+          <div class="step__line" aria-hidden="true"></div>
+          <div class="step reveal">
+            <div class="step__num">3</div>
+            <h3 data-i18n="how.s3.t">Nájdi svoju kochick</h3>
+            <p data-i18n="how.s3.d">Pridaj sa k stretnutiu alebo si vytvor vlastné a spoznaj rodičov vo svojom okolí.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO IT'S FOR / SHOWCASE ============ -->
+    <section class="section" id="who">
+      <div class="container who">
+        <div class="who__art reveal">
+          <img src="assets/img/profile-man-2.png" alt="" class="who__img who__img--1" />
+          <img src="assets/img/profile-woman.png" alt="" class="who__img who__img--2" />
+          <img src="assets/img/profile-woman-2.png" alt="" class="who__img who__img--3" />
+        </div>
+        <div class="who__copy reveal">
+          <span class="eyebrow" data-i18n="who.eyebrow">Pre koho je Kochick</span>
+          <h2 data-i18n="who.title">Pre každého rodiča, ktorý nechce chodiť sám</h2>
+          <p data-i18n="who.sub">Materská alebo rodičovská dovolenka nemusí znamenať samotu. Kochick premení tvoje prechádzky na čas, na ktorý sa tešíš — plný objavovania, malých výziev a nových priateľstiev.</p>
+          <ul class="checklist">
+            <li data-i18n="who.p1">Motivácia hýbať sa každý deň</li>
+            <li data-i18n="who.p2">Spoznaj rodičov s deťmi v podobnom veku</li>
+            <li data-i18n="who.p3">Lepšie spoznaj svoje mesto a okolie</li>
+            <li data-i18n="who.p4">Prispej k lepšej dostupnosti pre kočíky</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD CTA ============ -->
+    <section class="cta" id="download">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="container cta__inner reveal">
+        <h2 data-i18n="cta.title">Pripravená na prvú prechádzku?</h2>
+        <p data-i18n="cta.sub">Stiahni si Kochick a začni objavovať svoje mesto — a nových priateľov.</p>
+
+        <div class="store-row store-row--center">
+          <!-- IOS button — comment out this whole block to hide when only Android is ready -->
+          <a class="store-btn store-btn--light" data-store="ios" href="#" aria-label="App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.26 3.05-.99 1-2.15 1.58-3.4 1.48-.15-1.12.4-2.28 1.2-3.06.87-.86 2.3-1.5 3.46-1.47zM20.5 17.02c-.6 1.38-.9 1.99-1.66 3.2-1.07 1.7-2.58 3.82-4.46 3.83-1.66.02-2.09-1.08-4.35-1.07-2.26.01-2.73 1.09-4.4 1.07-1.87-.02-3.3-1.93-4.37-3.63C-1.16 17.9-1.48 12.4.98 9.48c1.24-1.5 3.2-2.45 4.98-2.45 1.82 0 2.96 1.08 4.46 1.08 1.46 0 2.35-1.08 4.46-1.08 1.6 0 3.29.87 4.5 2.38-3.95 2.16-3.31 7.8.12 8.61z"/></svg>
+            <span><small data-i18n="store.iosSmall">Stiahni na</small><strong>App Store</strong></span>
+          </a>
+          <!-- /IOS -->
+
+          <!-- ANDROID button — comment out this whole block to hide when only iOS is ready -->
+          <a class="store-btn store-btn--light" data-store="android" href="#" aria-label="Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8c-.3.2-.5.6-.5 1.1v18.2c0 .5.2.9.5 1.1l.1.1L14 12.1v-.2L3.7 1.7l-.1.1zm11.9 10.5l3.4 3.4-11 6.3c-.4.2-.8.1-1.1 0l8.7-9.7zm0-.6L6.8 2.4c.3-.2.7-.2 1.1 0l11 6.3-3.4 3zm.9.3l3.6-2c.7-.4.7-1.4 0-1.8l-3.5-2-3.7 3.4 3.6 2.4z"/></svg>
+            <span><small data-i18n="store.androidSmall">Získaj na</small><strong>Google Play</strong></span>
+          </a>
+          <!-- /ANDROID -->
+        </div>
+        <p class="cta__note" data-i18n="cta.soon">Máš otázku? Napíš nám na
+          <a href="mailto:info@kochick.sk">info@kochick.sk</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand">
+          <img src="assets/img/logo.png" alt="Kochick" class="brand__logo" />
+          <span class="brand__name">Kochick</span>
+        </a>
+        <p data-i18n="footer.tagline">Objavuj mesto pešo. Nájdi svoju kochick.</p>
+        <a class="footer__mail" href="mailto:info@kochick.sk">info@kochick.sk</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.linksTitle">Odkazy</h4>
+        <a href="#features" data-i18n="nav.features">Funkcie</a>
+        <a href="#how" data-i18n="nav.how">Ako to funguje</a>
+        <a href="#who" data-i18n="nav.who">Pre koho</a>
+        <a href="#download" data-i18n="nav.download">Stiahnuť</a>
+      </div>
+
+      <div class="footer__col footer__legal">
+        <h4 data-i18n="footer.companyTitle">Prevádzkovateľ</h4>
+        <p>
+          <strong>Redwixoft s. r. o.</strong><br />
+          Svidnícka 107/15<br />
+          821 03 Bratislava – Ružinov
+        </p>
+        <p class="footer__ids">
+          IČO: 55876714<br />
+          DIČ: 2122116447<br />
+          IČ DPH: SK2122116447
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year">2026</span> Redwixoft s. r. o. · <span data-i18n="footer.rights">Všetky práva vyhradené.</span></span>
+        <div class="lang lang--footer" role="group" aria-label="Language">
+          <button class="lang__btn" data-lang="sk">SK</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+          <button class="lang__btn" data-lang="uk">UK</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
