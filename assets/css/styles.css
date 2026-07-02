@@ -152,10 +152,10 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; }
   border: 6px solid #fff; background: #fff;
 }
 .hero__scene--back {
-  position: absolute; width: 62%; right: -14%; bottom: -10%;
+  position: absolute; width: 72%; right: -34%; bottom: -10%;
   transform: rotate(6deg); z-index: 2;
 }
-.hero__scene--front { position: relative; z-index: 1; transform: rotate(-3deg); }
+.hero__scene--front { position: relative; z-index: 1; transform: translateX(-9%) rotate(-3deg); }
 
 .float-badge {
   position: absolute; background: #fff; border-radius: 14px; padding: 10px 15px;
