@@ -74,7 +74,8 @@
       "footer.tagline": "Objavuj mesto pešo. Nájdi svoju kochick.",
       "footer.linksTitle": "Odkazy",
       "footer.companyTitle": "Prevádzkovateľ",
-      "footer.rights": "Všetky práva vyhradené."
+      "footer.rights": "Všetky práva vyhradené.",
+      "footer.privacy": "Ochrana osobných údajov"
     },
 
     en: {
@@ -140,7 +141,8 @@
       "footer.tagline": "Explore the city on foot. Find your kochick.",
       "footer.linksTitle": "Links",
       "footer.companyTitle": "Operator",
-      "footer.rights": "All rights reserved."
+      "footer.rights": "All rights reserved.",
+      "footer.privacy": "Privacy policy"
     },
 
     uk: {
@@ -206,7 +208,8 @@
       "footer.tagline": "Досліджуй місто пішки. Знайди свою kochick.",
       "footer.linksTitle": "Посилання",
       "footer.companyTitle": "Оператор",
-      "footer.rights": "Усі права захищені."
+      "footer.rights": "Усі права захищені.",
+      "footer.privacy": "Політика конфіденційності"
     }
   };
 
